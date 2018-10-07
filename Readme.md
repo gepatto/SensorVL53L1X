@@ -32,3 +32,5 @@ add to project.xml
     }
 
 ```
+
+![scheam](doc/schema.jpg)
