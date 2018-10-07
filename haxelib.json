@@ -1,0 +1,18 @@
+{
+    "name": "SensorVL53L1X",
+    "url": "https://github.com/gepatto/SensorVL53L1X",
+    "license": "MIT",
+    "tags": [
+      "Raspberry Pi",
+      "GPIO",
+      "i2c",
+      "Time Of Flight",
+      "Sensor",
+      "VL53L1X"
+    ],
+    "description": "Reading Data from the VL53L1X Time Of Flight distance sensor over i2c. Wrapper for code from https://www.waveshare.com/wiki/VL53L1X_Distance_Sensor",
+    "version": "1.0.0",
+    "releasenote": "(2018)",
+    "contributors": [ "Gepatto" ],
+    "dependencies": { }
+  }

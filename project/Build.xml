@@ -1,0 +1,29 @@
+<xml>
+	
+	<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+	
+	<files id="common">
+		
+		<compilerflag value="-Iinclude"/>
+		<compilerflag value="-I/usr/include"/>
+
+		<file name="common/ExternalInterface.cpp"/>
+		<file name="common/SensorVL53L1X.cpp"/>
+		<file name="common/VL53L1X.cpp"/>
+		
+	</files>
+	
+	<set name="DEBUGEXTRA" value="-debug" if="fulldebug" />
+	
+	<target id="NDLL" output="${LIBPREFIX}SensorVL53L1X${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+
+		<ext value=".ndll" if="linux"/>
+		<files id="common"/>
+		<outdir name="../ndll/${BINDIR}"/>		
+	</target>
+	
+	<target id="default">
+		<target id="NDLL"/>
+	</target>
+	
+</xml>
