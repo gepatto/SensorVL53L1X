@@ -1,4 +1,4 @@
-# RPiVL53L1X OpenFL Extension for Raspberry Pi 
+# SensorVL53L1X OpenFL Extension for Raspberry Pi 
 ### Reading data from a VL53L1x Distance Sensor connected via i2c
 
 This extension is a wrapper for code taken from:  
